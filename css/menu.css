@@ -1,0 +1,76 @@
+/* Label */
+.menu {
+  position: fixed;
+  z-index: 1;
+  left: -100%;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  transition: 0.5s cubic-bezier(1, 0, 0, 1);
+}
+.menu.active {
+  left: 0;
+  background: #ee524e;
+}
+.menu-container {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  /* right: 100%; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  height: 100%;
+  transition: 0.5s cubic-bezier(1, 0, 0, 1);
+}
+.menu-container.active {
+  right: 20%;
+}
+.menu-container .menu-items {
+  background: yellow;
+}
+
+/* button */
+.main-container .menu-button {
+  position: fixed;
+  top: calc(50% - 35px);
+  left: 2%;
+  z-index: 10;
+  width: 35px;
+  height: 35px;
+  border: 1px solid green;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container .menu-button.active {
+  border: 1px solid #000;
+}
+.main-container .menu-button .button {
+  width: 100%;
+  height: 0.25rem;
+  background: #000;
+  position: absolute;
+  top: 1rem;
+  transition: all 0.2s;
+}
+.button:before,
+.button:after {
+  content: "";
+  width: 100%;
+  height: 0.2rem;
+  background: #000;
+  position: absolute;
+  top: -0.6rem;
+  transition: all 0.2s;
+}
+
+.button::after {
+  top: 0.6rem;
+  height: 0.25rem;
+}

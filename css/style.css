@@ -5,7 +5,7 @@
 .main-container {
   width: 100%;
   height: 100vh;
-  background: red;
+  background: #ee524e;
 }
 .header {
   position: fixed;
@@ -14,13 +14,13 @@
   left: 0;
   right: 0;
   background: #fff;
-  height: 40px;
+  height: 5%;
   display: flex;
   align-items: center;
   transition: 0.5s cubic-bezier(1, 0, 0, 1);
 }
 .header.active {
-  height: 100px;
+  height: 10.5%;
 }
 .bottom {
   position: fixed;
@@ -29,13 +29,13 @@
   right: 0;
   bottom: 0;
   background: #fff;
-  height: 40px;
+  height: 5%;
   display: flex;
   align-items: center;
   transition: 0.5s cubic-bezier(1, 0, 0, 1);
 }
 .bottom.active {
-  height: 100px;
+  height: 10.5%;
 }
 .right {
   position: fixed;
@@ -44,13 +44,13 @@
   top: 0;
   bottom: 0;
   background: #fff;
-  width: 40px;
+  width: 3%;
   display: flex;
   align-items: center;
   transition: 0.5s cubic-bezier(1, 0, 0, 1);
 }
 .right.active {
-  width: 90px;
+  width: 6%;
 }
 .left {
   position: fixed;
@@ -59,69 +59,27 @@
   top: 0;
   bottom: 0;
   background: #fff;
-  width: 40px;
+  width: 3%;
   display: flex;
   align-items: center;
   transition: 0.5s cubic-bezier(1, 0, 0, 1);
 }
 .left.active {
-  width: 90px;
+  width: 6%;
 }
 .header-container {
-  width: 90%;
+  width: 94%;
   margin: auto;
   display: flex;
   justify-content: space-between;
+  transition: 0.5s cubic-bezier(1, 0, 0, 1);
+}
+.header-container.active {
+  width: 88%;
 }
 .text {
   height: 200vh;
   position: relative;
-}
-.main-container .menu-button {
-  position: fixed;
-  z-index: 10;
-  color: #fff;
-  top: 50px;
-  left: 100px;
-  border: 1px solid yellow;
-  padding: 5px;
-}
-.main-container .menu-button.active {
-  color: #000;
-  border: 1px solid #000;
-}
-.menu {
-  position: fixed;
-  z-index: 1;
-  left: -100%;
-  top: 0;
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-  background: transparent;
-  transition: 0.5s cubic-bezier(1, 0, 0, 1);
-}
-.menu.active {
-  left: 0;
-  background: red;
-}
-.menu-container {
-  position: absolute;
-  z-index: 2;
-  right: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
-  height: 100%;
-  transition: 0.5s cubic-bezier(1, 0, 0, 1);
-}
-.menu-container.active {
-  right: 20%;
-}
-.menu-container .menu-items {
-  background: yellow;
 }
 
 @media only screen and (max-width: 600px) {

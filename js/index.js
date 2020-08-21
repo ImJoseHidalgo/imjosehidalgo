@@ -1,6 +1,7 @@
 document.querySelector(".menu-button").addEventListener("click", () => {
   document.querySelector(".menu").classList.toggle("active");
   document.querySelector(".menu-button").classList.toggle("active");
+  document.querySelector(".header-container").classList.toggle("active");
   document.querySelector(".header").classList.toggle("active");
   document.querySelector(".bottom").classList.toggle("active");
   document.querySelector(".right").classList.toggle("active");
