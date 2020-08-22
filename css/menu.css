@@ -18,7 +18,6 @@
   position: absolute;
   z-index: 2;
   right: 0;
-  /* right: 100%; */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -36,41 +35,129 @@
 
 /* button */
 .main-container .menu-button {
+  user-select: none;
   position: fixed;
-  top: calc(50% - 35px);
-  left: 2%;
+  top: calc(50% - 30px);
+  left: 2.2%;
   z-index: 10;
-  width: 35px;
-  height: 35px;
-  border: 1px solid green;
+  width: 30px;
+  height: 30px;
   transition: 0.5s;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+.main-container .menu-button p {
+  position: absolute;
+  font-size: 10px;
+  font-weight: 400;
+  left: 25px;
+  padding: 12px 0;
+  transition: 0.2s all;
+  transform: rotate(-90deg);
+  letter-spacing: 3px;
+  opacity: 1;
+}
+.main-container .menu-button:hover p {
+  font-weight: bold;
 }
 .main-container .menu-button.active {
-  border: 1px solid #000;
+  width: 25px;
+  height: 25px;
+}
+.main-container .menu-button.active p {
+  opacity: 0;
 }
 .main-container .menu-button .button {
-  width: 100%;
-  height: 0.25rem;
-  background: #000;
+  width: 80%;
+  height: 0.2rem;
+  background: rgb(47, 47, 47);
   position: absolute;
   top: 1rem;
-  transition: all 0.2s;
+  left: 0;
+  border-radius: 50px;
+  transition: 0.2s;
 }
 .button:before,
 .button:after {
   content: "";
-  width: 100%;
+  width: 60%;
   height: 0.2rem;
-  background: #000;
+  background: #222222;
   position: absolute;
-  top: -0.6rem;
-  transition: all 0.2s;
+  top: -0.4rem;
+  right: 0;
+  transition: 0.2s;
+  border-radius: 50px;
+}
+.button::after {
+  width: 40%;
+  top: 0.4rem;
+  height: 0.15rem;
 }
 
-.button::after {
-  top: 0.6rem;
-  height: 0.25rem;
+.menu-button:hover .button:before,
+.menu-button:hover .button:after {
+  width: 80%;
+}
+.menu-button.active .button {
+  background: none;
+}
+.menu-button.active .button:after {
+  left: 0;
+  top: 0;
+  transform: rotate(44deg);
+  height: 0.2rem;
+  width: 100%;
+}
+.menu-button.active .button:before {
+  left: 0;
+  top: 0;
+  transform: rotate(-44deg);
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  /* button */
+  .main-container .menu-button {
+    left: 84%;
+    top: 4.3%;
+    width: 30px;
+    height: 30px;
+  }
+  .main-container .menu-button:after {
+    content: "";
+    position: absolute;
+    z-index: -5;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  }
+  .main-container .menu-button p {
+    display: none;
+  }
+  .main-container .menu-button .button {
+    height: 0.1rem;
+    top: 0.9rem;
+    left: 3%;
+  }
+  .button:before,
+  .button:after {
+    height: 0.14rem;
+    top: -0.39rem;
+  }
+  .button::after {
+    top: 0.35rem;
+    height: 0.15rem;
+  }
+  .menu-button.active .button:after {
+    height: 0.15rem;
+  }
+  .main-container .menu-button.active .button {
+    left: 10%;
+    top: 48%;
+  }
 }
