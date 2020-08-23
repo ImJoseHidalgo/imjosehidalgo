@@ -5,6 +5,7 @@
 }
 a {
   color: rgb(47, 47, 47);
+  text-decoration: none;
 }
 .header {
   position: fixed;
@@ -31,7 +32,7 @@ a {
 .header-container.active {
   width: 88%;
 }
-.header-container a {
+.header-container .logo {
   font-size: 20px;
   color: #000;
   text-decoration: none;
@@ -53,5 +54,29 @@ a {
   }
   .header.active {
     height: 20px;
+  }
+  .header-container .logo {
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    opacity: 1;
+    transition: 0.8s cubic-bezier(1, 0, 0, 1);
+  }
+  .header-container .logo.active {
+    opacity: 0;
+    transition: 0.4s cubic-bezier(1, 0, 0, 1);
+  }
+  .header-container .languages {
+    position: absolute;
+    z-index: 20;
+    left: -40px;
+    top: 40px;
+    opacity: 0;
+    transition: 0.3s 0s;
+  }
+  .header-container .languages.active {
+    left: 40px;
+    opacity: 1;
+    transition: 0.5s 0.2s;
   }
 }

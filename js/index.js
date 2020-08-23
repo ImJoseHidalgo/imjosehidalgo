@@ -7,4 +7,8 @@ document.querySelector(".menu-button").addEventListener("click", () => {
   document.querySelector(".right").classList.toggle("active");
   document.querySelector(".left").classList.toggle("active");
   document.querySelector(".menu-container").classList.toggle("active");
+
+  // Responsive
+  document.querySelector(".languages").classList.toggle("active");
+  document.querySelector(".logo").classList.toggle("active");
 });

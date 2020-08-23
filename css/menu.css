@@ -142,12 +142,13 @@
   .main-container .menu-button .button {
     height: 0.1rem;
     top: 0.9rem;
-    left: 3%;
+    left: 10%;
   }
   .button:before,
   .button:after {
     height: 0.14rem;
     top: -0.39rem;
+    width: 100%;
   }
   .button::after {
     top: 0.35rem;
@@ -156,8 +157,12 @@
   .menu-button.active .button:after {
     height: 0.15rem;
   }
+  .menu-button:hover .button:before,
+  .menu-button:hover .button:after {
+    width: 100%;
+  }
   .main-container .menu-button.active .button {
     left: 10%;
-    top: 48%;
+    top: 45%;
   }
 }
