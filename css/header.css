@@ -7,6 +7,9 @@ a {
   color: rgb(47, 47, 47);
   text-decoration: none;
 }
+li {
+  list-style: none;
+}
 .header {
   position: fixed;
   z-index: 4;
@@ -43,9 +46,17 @@ a {
 }
 .header-container .languages a {
   margin-left: 7px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
+  color: gray;
+  border-bottom: 1px solid #fff;
+}
+
+body#en .header-container .languages a:nth-child(1),
+body#es .header-container .languages a:nth-child(2) {
+  color: #000;
+  border-bottom: 1px solid #000;
 }
 
 @media only screen and (max-width: 600px) {
