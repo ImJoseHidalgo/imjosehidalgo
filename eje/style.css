@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  /* position: relative; */
+}
+.main::after,
+.main:before {
+  content: "";
+  position: fixed;
+  z-index: 1;
+  width: 50%;
+  height: 100vh;
+  top: 0;
+  transition: 1s;
+}
+.main::after {
+  left: 0;
+  /* background: #0e1319; */
+  /* background: #2c3541; */
+  background-image: radial-gradient(circle at right, #2c3541, #0e1319);
+}
+.main::before {
+  right: 0;
+  background-image: radial-gradient(circle at left, #e6e6e6, #d9d9da);
+}
+.main.active::after {
+  width: 20%;
+}
+.main.active::before {
+  width: 80%;
+}
+.main.remove::after {
+  width: 0%;
+}
+.main.remove::before {
+  width: 100%;
+}
+
+.sect-1,
+.sect-2,
+.sect-3,
+.sect-4 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+}
+.sect-1 {
+  /* background: rgba(255, 255, 255, 0.1); */
+}
+.sect-2 {
+  /* background: rgba(255, 255, 255, 0.2); */
+}
+.sect-3 {
+  background: rgba(255, 255, 255, 0.3);
+}
+.sect-4 {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.picture {
+  position: fixed;
+  z-index: 3;
+  left: calc(50% - 200px);
+  bottom: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /* opacity: 1; */
+  transition: 1s;
+}
+.picture img {
+  width: 400px;
+}
+.main.active .picture {
+  left: calc(20% - 200px);
+}
+.main.remove .picture {
+  left: calc(0% - 400px);
+}
+
+/* .picture.active {
+  opacity: 0; 
+}
+*/
