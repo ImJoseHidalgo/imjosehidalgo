@@ -1,3 +1,7 @@
+body.active {
+  overflow: hidden;
+}
+
 /* Label */
 .menu {
   position: fixed;
@@ -286,7 +290,11 @@
     margin-left: 20%;
   }
   .menu-container .menu-items {
-    margin-top: 200px;
+    /* margin-top: 200px; */
+    margin-top: 50%;
+  }
+  .menu-container .contact-desc {
+    margin-top: -80px;
   }
   .menu-container .contact p {
     font-size: 10px;

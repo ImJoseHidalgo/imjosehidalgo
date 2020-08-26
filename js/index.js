@@ -1,4 +1,7 @@
 document.querySelector(".menu-button").addEventListener("click", () => {
+  // Block Scroll
+  document.querySelector(".body").classList.toggle("active");
+
   document.querySelector(".menu").classList.toggle("active");
   document.querySelector(".menu-background").classList.toggle("active");
   document.querySelector(".menu-button").classList.toggle("active");
