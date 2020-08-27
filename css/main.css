@@ -10,27 +10,35 @@
 }
 .main::after {
   left: 0;
-  background-image: radial-gradient(circle at right, #2c3541, #0e1319);
+  background-image: radial-gradient(
+    circle at right,
+    #f8f8f8,
+    rgb(235, 235, 235)
+  );
 }
 .main::before {
   right: 0;
-  background-image: radial-gradient(circle at left, #e6e6e6, #d9d9da);
+  background-image: radial-gradient(circle at left, #2c3541, #0e1319);
 }
 .main.active::after {
-  width: 20%;
+  width: 80%;
 }
 .main.active::before {
-  width: 80%;
+  width: 20%;
 }
 
 .sect-1,
-.sect-2,
 .sect-3,
 .sect-4,
 .sect-5 {
+  position: relative;
   width: 100%;
   height: 100vh;
+}
+.sect-2 {
   position: relative;
+  width: 100%;
+  height: 30vh;
 }
 .sect-3 {
   background: rgba(255, 255, 255, 1);
@@ -38,7 +46,7 @@
 .picture {
   position: fixed;
   z-index: 0;
-  left: calc(50% - 200px);
+  right: calc(50% - 200px);
   bottom: 0;
   top: 0;
   display: flex;
@@ -50,7 +58,76 @@
   width: 400px;
 }
 .main.active .picture {
-  left: calc(20% - 200px);
+  right: calc(20% - 200px);
+}
+/* Name Container */
+.sect-1 .name-container {
+  position: fixed;
+  z-index: 2;
+  bottom: 5%;
+  left: 3%;
+}
+.sect-1 .name-container .name {
+  font-weight: 700;
+  font-size: 28px;
+}
+.sect-1 .name-container .name,
+.sect-1 .name-container .prof,
+.sect-1 .portf-container .name {
+  text-transform: uppercase;
+  opacity: 1;
+  transform: scaleY(1);
+  transition: 0.3s 0.5s;
+}
+.main.active .sect-1 .name-container .name,
+.main.active .sect-1 .name-container .prof,
+.main.active .sect-1 .portf-container .name {
+  opacity: 0;
+  transform: scaleY(0);
+  transition: 0.3s;
+}
+.sect-1 .portf-container {
+  position: fixed;
+  z-index: 2;
+  bottom: 5%;
+  right: 3%;
+  cursor: pointer;
+}
+.sect-1 .portf-container a {
+  font-weight: 700;
+  font-size: 28px;
+  color: #dadada;
+}
+.sect-1 .portf-container img {
+  width: 20px;
+}
+/* Landing Description */
+.description {
+  position: fixed;
+  z-index: 0;
+  top: 40%;
+  left: 22%;
+  width: 50%;
+  margin: auto;
+  /* border: 1px solid red; */
+}
+.description h2 {
+  width: 60%;
+  margin: 30px 0;
+  font-size: 28px;
+  font-weight: 900;
+  transition: 0.5s 0s;
+  transform: scaleY(0);
+  transform-origin: left;
+}
+.description h2 strong {
+  font-weight: 700;
+  color: #222933;
+}
+.main.active .description h2 {
+  transform: scaleY(1);
+  transition: 0.5s 0.2s;
+  transform-origin: left;
 }
 
 @media only screen and (max-width: 600px) {
@@ -59,10 +136,10 @@
     width: 80%;
   }
   .main.active::after {
-    width: 0%;
+    width: 100%;
   }
   .main.active::before {
-    width: 100%;
+    width: 0%;
   }
   .picture {
     left: calc(80% - 100px);
@@ -72,5 +149,58 @@
   }
   .main.active .picture {
     left: calc(100% - 100px);
+  }
+  /* Name Container */
+  .sect-1 .name-container {
+    top: 15%;
+    left: 10%;
+    opacity: 1;
+    transition: 0.3s 0.2s;
+  }
+  .sect-1 .name-container .name {
+    font-weight: 600;
+    font-size: 22px;
+  }
+  .sect-1 .name-container .prof {
+    font-size: 14px;
+  }
+  .sect-1 .portf-container {
+    bottom: 55%;
+    left: -70%;
+    opacity: 1;
+    transition: 0.3s 0.2s;
+    transform: rotate(-90deg);
+  }
+  .sect-1 .name-container.active,
+  .sect-1 .portf-container.active {
+    opacity: 0;
+    transition: 0.2s;
+  }
+  .sect-1 .portf-container a {
+    font-size: 22px;
+    color: #222933;
+  }
+  .sect-1 .portf-container img {
+    background: #222933;
+    border-radius: 50%;
+    padding: 5px;
+    width: 12px;
+    margin: 0 0 -3px 0;
+    transform: rotate(180deg);
+  }
+  /* Landing Description */
+  .description {
+    top: 30%;
+    left: 10%;
+    width: 70%;
+  }
+  .description h2 {
+    width: 90%;
+    margin: 30px 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .description h2 strong {
+    font-weight: 600;
   }
 }

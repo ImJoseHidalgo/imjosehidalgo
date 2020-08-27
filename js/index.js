@@ -15,4 +15,6 @@ document.querySelector(".menu-button").addEventListener("click", () => {
   // Responsive
   document.querySelector(".languages").classList.toggle("active");
   document.querySelector(".logo").classList.toggle("active");
+  document.querySelector(".name-container").classList.toggle("active");
+  document.querySelector(".portf-container").classList.toggle("active");
 });

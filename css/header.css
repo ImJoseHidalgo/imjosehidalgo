@@ -13,17 +13,31 @@ li {
 .header {
   position: fixed;
   z-index: 4;
-  top: 0;
+  top: 3%;
   left: 0;
   right: 0;
-  background: #fff;
   height: 5%;
   display: flex;
   align-items: center;
   transition: 0.5s cubic-bezier(1, 0, 0, 1);
 }
-.header.active {
+.main-container.active .header {
+  top: 0;
+}
+.header.active,
+.header.active::before {
   height: 10.5%;
+}
+.header::before {
+  content: "";
+  background: #fff;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  transition: height 0.5s cubic-bezier(1, 0, 0, 1);
 }
 .header-container {
   width: 94%;
@@ -40,6 +54,7 @@ li {
   color: #000;
   text-decoration: none;
 }
+
 .header-container .languages {
   display: flex;
   align-items: center;
@@ -49,29 +64,41 @@ li {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
+  border-bottom: 1px solid transparent;
+  transition: 0.5s;
   color: gray;
-  border-bottom: 1px solid #fff;
 }
-
-body#en .header-container .languages a:nth-child(1),
-body#es .header-container .languages a:nth-child(2) {
+body#en .main-container.active .languages a:nth-child(1),
+body#es .main-container.active .languages a:nth-child(2) {
   color: #000;
-  border-bottom: 1px solid #000;
+}
+body#en .main-container .languages a:nth-child(1),
+body#es .main-container .languages a:nth-child(2) {
+  color: #fff;
+  font-weight: 700;
+}
+body#en .main-container .languages.active a:nth-child(1),
+body#es .main-container .languages.active a:nth-child(2) {
+  color: #000;
 }
 
 @media only screen and (max-width: 600px) {
   .header {
     height: 0px;
   }
-  .header.active {
+  .header.active,
+  .header.active::before {
     height: 20px;
   }
   .header-container .logo {
     position: absolute;
     left: 40px;
     top: 30px;
-    opacity: 1;
+    opacity: 0;
     transition: 0.8s cubic-bezier(1, 0, 0, 1);
+  }
+  .main-container.active .header-container .logo {
+    opacity: 1;
   }
   .header-container .logo.active {
     opacity: 0;
