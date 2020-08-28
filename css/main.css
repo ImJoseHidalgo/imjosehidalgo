@@ -28,6 +28,7 @@
 }
 
 .sect-1,
+.sect-2,
 .sect-3,
 .sect-4,
 .sect-5 {
@@ -36,11 +37,12 @@
   height: 100vh;
 }
 .sect-2 {
-  position: relative;
-  width: 100%;
-  height: 30vh;
+  height: 100vh;
 }
 .sect-3 {
+  background: orange;
+}
+.sect-5 {
   background: rgba(255, 255, 255, 1);
 }
 .picture {
@@ -126,8 +128,77 @@
 }
 .main.active .description h2 {
   transform: scaleY(1);
-  transition: 0.5s 0.2s;
+  transition: 0.3s 0.6s;
   transform-origin: left;
+}
+
+/* Skills Section */
+.skills {
+  position: fixed;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.skills-container {
+  width: 70%;
+}
+.skills-container .about h3,
+.skills-container .skills-list h3 {
+  margin: 15px 0;
+  opacity: 0;
+  transition: 0.5s 0.3s;
+}
+.skills-container .skills-list h3 {
+  transition: 0.5s 0.6s;
+}
+.about,
+.skills-list {
+  width: 70%;
+}
+.about p {
+  font-size: 20px;
+  line-height: 26px;
+  margin: 10px 0;
+  opacity: 0;
+  transition: 0.5s 0.4s;
+}
+.skills.active .skills-container h3,
+.skills.active .about p {
+  opacity: 1;
+}
+.skills-list-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.list p {
+  font-size: 20px;
+  margin: 10px 0;
+  opacity: 0;
+  transition: 0.5s 0.6s;
+}
+.list-item {
+  display: flex;
+  margin: 0;
+  opacity: 0;
+  transition: 0.5s 0.7s;
+}
+.list-item p {
+  margin: 0 0 10px 0;
+}
+.skills.active .list p,
+.skills.active .list-item {
+  opacity: 1;
+}
+
+.main.active-2 .description h2 {
+  transform: scaleY(0);
+  transition: 0.3s 0s;
 }
 
 @media only screen and (max-width: 600px) {
@@ -195,12 +266,36 @@
     width: 70%;
   }
   .description h2 {
-    width: 90%;
+    width: 100%;
     margin: 30px 0;
     font-size: 16px;
     font-weight: 600;
   }
   .description h2 strong {
     font-weight: 600;
+  }
+  /* Skills Section */
+  .skills-container {
+    width: 80%;
+  }
+  .about,
+  .skills-list {
+    width: 100%;
+  }
+  .skills-container .about h3,
+  .skills-container .skills-list h3 {
+    margin: 15px 0;
+    font-size: 20px;
+  }
+  .about p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .list p {
+    margin-top: 0;
+    font-size: 12px;
+  }
+  .main.active-2 .picture {
+    left: calc(100% + 100px);
   }
 }

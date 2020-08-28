@@ -3,6 +3,10 @@
   padding: 0;
   font-family: "Montserrat", sans-serif;
 }
+h3 {
+  font-size: 28px;
+  font-weight: 900;
+}
 a {
   color: rgb(47, 47, 47);
   text-decoration: none;
@@ -99,6 +103,9 @@ body#es .main-container .languages.active a:nth-child(2) {
   }
   .main-container.active .header-container .logo {
     opacity: 1;
+  }
+  .main-container.active .header-container .logo.active {
+    opacity: 0;
   }
   .header-container .logo.active {
     opacity: 0;
