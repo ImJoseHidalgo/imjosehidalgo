@@ -14,7 +14,6 @@ const sectionOneObserver = new IntersectionObserver(function (
 ) {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) {
-      console.log("active");
       main.classList.add("active");
       mainContainer.classList.add("active");
     } else {
@@ -39,11 +38,9 @@ const sectionTwoObserver = new IntersectionObserver(function (
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       skills.classList.add("active");
-      console.log("section visible");
       main.classList.add("active-2");
     } else {
       skills.classList.remove("active");
-      console.log("section hiden");
       main.classList.remove("active-2");
     }
   });
