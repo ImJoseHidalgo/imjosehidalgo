@@ -53,10 +53,12 @@ li {
 .header-container.active {
   width: 88%;
 }
+/* .header-container .logo img {
+  width: 25%;
+} */
 .header-container .logo {
-  font-size: 20px;
-  color: #000;
-  text-decoration: none;
+  font-size: 16px;
+  font-weight: 900;
 }
 
 .header-container .languages {
@@ -101,9 +103,9 @@ body#es .main-container .languages.active a:nth-child(2) {
     opacity: 0;
     transition: 0.8s cubic-bezier(1, 0, 0, 1);
   }
-  .main-container.active .header-container .logo {
+  /* .main-container.active .header-container .logo {
     opacity: 1;
-  }
+  } */
   .main-container.active .header-container .logo.active {
     opacity: 0;
   }

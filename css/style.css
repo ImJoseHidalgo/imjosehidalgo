@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .bottom {
   position: fixed;
   z-index: 4;

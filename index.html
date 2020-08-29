@@ -8,22 +8,26 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/scroll.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,451;0,500;0,550;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="images/icons/jh.png" />
   </head>
   <body class="body" id="en">
+    <div class="scrollTop" onclick="scrollToTop();"></div>
+
     <!-- Menu Container start -->
     <div class="menu">
       <div class="menu-background"></div>
       <div class="menu-container">
         <div class="contact">
           <div class="menu-items">
-            <li><a href="#">. Portfolio</a></li>
-            <li><a href="#">. Blog</a></li>
-            <li><a href="#">. About</a></li>
-            <li><a href="#">. Contact</a></li>
+            <li><a href="#portfolio">. Portfolio</a></li>
+            <li><a href="./blog/">. Blog</a></li>
+            <li><a href="#about">. About</a></li>
+            <li><a href="#contact">. Contact</a></li>
           </div>
           <div class="contact-desc">
             <p>
@@ -59,11 +63,12 @@
       <header class="header">
         <div class="header-container">
           <div class="logo">
-            <a href="./"><i>José Hidalgo</i></a>
+            <a href="./">JOSÉ HIDALGO</a>
+            <!-- <a href="./"><img src="images/icons/jhB.png" alt="Logo" /></a> -->
           </div>
           <div class="languages">
             <a href="#">EN</a>
-            <a href="#">ES</a>
+            <a href="./es/index.html">ES</a>
           </div>
         </div>
       </header>
@@ -96,7 +101,7 @@
     </div>
     <div class="main">
       <div class="picture">
-        <img src="images/man-5179003_1280.webp" alt="profile" />
+        <img src="images/p3 copy.png" alt="profile" />
       </div>
       <div class="description">
         <h2>Hi! 👋</h2>
@@ -195,34 +200,40 @@
           <p class="prof">Frontend Developer</p>
         </div>
         <div class="portf-container">
-          <a href="#"
+          <a href="#portfolio"
             ><p class="name">
               <i><img src="images/proximo.svg" alt="arrow" /></i> PORTFOLIO
             </p></a
           >
         </div>
       </div>
-      <div class="sect-2"></div>
-      <div class="sect-3">
+      <div class="sect-2" id="about"></div>
+      <div class="sect-3" id="portfolio">
         <div class="portfolio-container">
           <h3>Portfolio</h3>
           <h4>Some of my projects</h4>
           <div class="portfolio-previews">
             <div class="preview">
-              <img src="images/piensengrande.club_.png" alt="foto" />
+              <img src="images/8.jpg" alt="foto" />
               <div class="preview-description">
                 <h4>PIENSENGRANDE</h4>
                 <p>Lorem ipsum dolopiciatis at? At qui voluptas recusandae?</p>
                 <div class="preview-links">
-                  <a href="#">Live Demo</a>
-                  <a href="#">Repo</a>
+                  <a target="_blank" href="https://piensengrande.club"
+                    >Live Demo</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://github.com/ImJoseHidalgo/Piensengrande-Blog"
+                    >Repo</a
+                  >
                 </div>
               </div>
             </div>
             <div class="preview">
-              <img src="images/piensengrande.club_.png" alt="foto" />
+              <img src="images/5.jpg" alt="foto" />
               <div class="preview-description">
-                <h4>Title Name</h4>
+                <h4>Parallax Effect</h4>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Aperiam laborum dicta, eius praesentium, quaerat ut ullam
@@ -230,15 +241,23 @@
                   repudiandae perspiciatis at? At qui voluptas recusandae?
                 </p>
                 <div class="preview-links">
-                  <a href="#">Live Demo</a>
-                  <a href="#">Repo</a>
+                  <a
+                    target="_blank"
+                    href="https://imjosehidalgo.github.io/Parallax-Effect/"
+                    >Live Demo</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://github.com/ImJoseHidalgo/Parallax-Effect"
+                    >Repo</a
+                  >
                 </div>
               </div>
             </div>
             <div class="preview">
-              <img src="images/piensengrande.club_.png" alt="foto" />
+              <img src="images/2.jpg" alt="foto" />
               <div class="preview-description">
-                <h4>Title Name</h4>
+                <h4>Instagram Clone</h4>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Aperiam laborum dicta, eius praesentium, quaerat ut ullam
@@ -246,16 +265,24 @@
                   repudiandae perspiciatis at? At qui voluptas recusandae?
                 </p>
                 <div class="preview-links">
-                  <a href="#">Live Demo</a>
-                  <a href="#">Repo</a>
+                  <a
+                    target="_blank"
+                    href="https://imjosehidalgo.github.io/Instagram-Clone/"
+                    >Live Demo</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://github.com/ImJoseHidalgo/Instagram-Clone"
+                    >Repo</a
+                  >
                 </div>
               </div>
             </div>
           </div>
-          <a href="#">See More</a>
+          <a href="./portfolio/index.html">See More</a>
         </div>
       </div>
-      <div class="sect-4">
+      <div class="sect-4" id="contact">
         <div class="contact-footer-container">
           <div class="contact-left">
             <h3>Want to work with me?</h3>
@@ -292,5 +319,6 @@
 
     <script src="js/index.js"></script>
     <script src="js/intersectionObserver.js"></script>
+    <script src="scroll.js"></script>
   </body>
 </html>

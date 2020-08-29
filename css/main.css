@@ -51,7 +51,7 @@
 .picture {
   position: fixed;
   z-index: 0;
-  right: calc(50% - 200px);
+  right: calc(50% - 300px);
   bottom: 0;
   top: 0;
   display: flex;
@@ -60,10 +60,10 @@
   transition: 1s;
 }
 .picture img {
-  width: 400px;
+  width: 600px;
 }
 .main.active .picture {
-  right: calc(20% - 200px);
+  right: calc(20% - 300px);
 }
 /* Name Container */
 .sect-1 .name-container {
@@ -316,13 +316,13 @@
     width: 0%;
   }
   .picture {
-    left: calc(80% - 100px);
+    left: calc(80% - 230px);
   }
   .picture img {
-    width: 200px;
+    width: 500px;
   }
   .main.active .picture {
-    left: calc(100% - 100px);
+    left: calc(100% - 220px);
   }
   /* Name Container */
   .sect-1 .name-container {
