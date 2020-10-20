@@ -58,7 +58,26 @@ li {
 } */
 .header-container .logo {
   font-size: 16px;
-  font-weight: 900;
+}
+.header-container .logo a {
+  display: flex;
+  font-weight: bold;
+}
+.main-container .header-container .logo a span {
+  font-weight: bold;
+  transform: scaleX(0);
+  transform-origin: left;
+  width: 0;
+  transition: 0.5s 0.5s;
+  margin-right: 1px;
+}
+.main-container.active .header-container .logo a span:first-child {
+  margin-right: 7px;
+}
+.main-container.active .header-container .logo a span {
+  transform: scaleX(1);
+  transform-origin: right;
+  width: 100%;
 }
 
 .header-container .languages {

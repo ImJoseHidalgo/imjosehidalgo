@@ -17,6 +17,33 @@ html {
 .bottom.active {
   height: 10.5%;
 }
+.menu-footer {
+  width: 94%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+.menu-footer.active {
+  opacity: 1;
+}
+.menu-footer.active-menu {
+  opacity: 0;
+}
+.menu-footer a,
+.menu-footer p {
+  font-weight: 600;
+}
+.menu-footer ul {
+  display: flex;
+  list-style: none;
+}
+.menu-footer ul li {
+  margin-left: 10px;
+}
+
 .right {
   position: fixed;
   z-index: 4;
