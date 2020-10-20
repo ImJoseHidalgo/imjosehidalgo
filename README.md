@@ -1,16 +1,15 @@
 ### Hi there 👋
 
-<!--
-**ImJoseHidalgo/ImJoseHidalgo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+![header](./images/readme-header.png)
 
-Here are some ideas to get you started:
+- 💻 I’m a developer from Bolivia who is mainly interested in web technologies, specially in **frontend development**.
+- 🔧 I develop my projects using **HTML**, **CSS** and, **JavaScript**.
+- I'm currently studying at 💚 **[Platzi](https://platzi.com)**.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Contact
+
+- 📩 **[Email](mailto:josehidalgo990@gmail.com)**
+- 🌐 **[Website](https://josehidalgo.dev)**
+- 🐦 **[Twitter](https://twitter.com/imjosehidalgo)**
+- 💼 **[LinkedIn](https://linkedin.com/in/imjosehidalgo)**
+- IG **[Instagram](https://instagram.com/imjosehidalgo)**
