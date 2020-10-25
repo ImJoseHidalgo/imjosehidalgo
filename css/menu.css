@@ -5,10 +5,9 @@ body.active {
 /* Label */
 .menu {
   position: fixed;
-  z-index: 10;
+  z-index: 3;
   left: -100%;
   top: 0;
-  z-index: 1;
   height: 100%;
   width: 100%;
   transition: 0.5s cubic-bezier(1, 0, 0, 1);
@@ -22,14 +21,14 @@ body.active {
   z-index: -1;
   left: 0;
   top: 0;
-  background: #0f1319;
+  background: var(--darkBackground);
   width: 100%;
   height: 100%;
   opacity: 0;
   transition: 0.2s 0s ease-in-out;
 }
 .menu-background.active {
-  opacity: 1;
+  opacity: 0.98;
   transition: 0.5s 0.1s cubic-bezier(1, 0, 0, 1);
 }
 .menu-container {
@@ -40,7 +39,7 @@ body.active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #fff;
+  background: var(--borders);
   height: 100%;
   transition: 0.5s cubic-bezier(1, 0, 0, 1);
 }
@@ -49,8 +48,16 @@ body.active {
 }
 
 .menu-container .menu-items li a {
-  font-size: 34px;
-  font-weight: 700;
+  font-size: 54px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 55px;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--textColorDark);
+}
+.menu-container .menu-items li a:hover {
+  color: var(--textColorDark);
 }
 .menu-container .menu-items li {
   margin: 10px 0;
@@ -97,7 +104,7 @@ body.active {
 .menu-container .contact a {
   font-size: 12px;
   font-weight: 600;
-  color: #000;
+  color: var(--textColorDark);
 }
 .menu-container .contact p {
   font-size: 12px;
@@ -107,11 +114,8 @@ body.active {
 .menu-container .contact a {
   font-size: 12px;
   font-weight: 600;
-  color: #000;
 }
-.menu-container .contact a:hover {
-  color: gray;
-}
+
 .menu-container .contact .social-container {
   display: none;
 }
@@ -185,7 +189,7 @@ body.active {
 .main-container .menu-button .button {
   width: 80%;
   height: 0.2rem;
-  background: rgb(47, 47, 47);
+  background: var(--textColorDark);
   position: absolute;
   top: 1rem;
   left: 0;
@@ -197,7 +201,7 @@ body.active {
   content: "";
   width: 60%;
   height: 0.2rem;
-  background: #222222;
+  background: var(--textColorDark);
   position: absolute;
   top: -0.4rem;
   right: 0;
@@ -250,7 +254,7 @@ body.active {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #fff;
+    background: var(--lightBackground);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   }
   .main-container .menu-button p {
@@ -307,7 +311,6 @@ body.active {
   .menu-container .contact a {
     font-size: 10px;
     font-weight: 600;
-    color: #000;
   }
   .menu-container .contact .mobile {
     margin-top: 20px;

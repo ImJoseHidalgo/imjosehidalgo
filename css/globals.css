@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+:root {
+  --lightBackground: #f8f8f8;
+  --darkBackground: #0e1319;
+  --borders: #fff;
+  --textColorDark: #0e1319;
+  --textColorLight: #f8f8f8;
+  --textColorGray: #808080;
+  --line: #2c3541;
+}
+.color {
+  --lightBackground: #0e1319;
+  --darkBackground: #f8f8f8;
+  --borders: #111;
+  --textColorDark: #f8f8f8;
+  --textColorLight: #0e1319;
+  --textColorGray: #808080;
+  --line: #fff;
+}
+html {
+  scroll-behavior: smooth;
+}
+h3 {
+  font-size: 28px;
+  font-weight: 900;
+}
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--textColorDark);
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+/* FOCUS ACTIONS
+      =============================== */
+body#en .main-container.active .languages a:nth-child(1),
+body#es .main-container.active .languages a:nth-child(2) {
+  color: var(--textColorDark);
+}
+body#en .main-container .languages a:nth-child(1),
+body#es .main-container .languages a:nth-child(2) {
+  color: var(--lightBackground);
+  font-weight: 700;
+}
+body#en .main-container .languages.active a:nth-child(1),
+body#es .main-container .languages.active a:nth-child(2) {
+  color: var(--textColorDark);
+}
+
+/* SCROLLBAR
+      =============================== */
+body::-webkit-scrollbar {
+  width: 0.4em;
+}
+body::-webkit-scrollbar-track {
+  background: var(--lightBackground);
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--darkBackground);
+}
+body::-webkit-scrollbar-thumb:active {
+  background: #1c2531;
+}

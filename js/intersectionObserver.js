@@ -1,8 +1,6 @@
 const main = document.querySelector(".main");
-const skills = document.querySelector(".skills");
 const mainContainer = document.querySelector(".main-container");
 const sectionOne = document.querySelector(".sect-1");
-const sectionTwo = document.querySelector(".sect-2");
 
 const sectionOneOptions = {
   threshold: 0.9,
@@ -25,25 +23,28 @@ const sectionOneObserver = new IntersectionObserver(function (
 sectionOneOptions);
 sectionOneObserver.observe(sectionOne);
 
-// Skills Section
+/* FOOTER MENU
+      =============================== */
 
-const sectionTwoOptions = {
-  threshold: 0.5,
+const footerMenu = document.querySelector(".menu-footer");
+const contactSection = document.querySelector(".sect-4");
+
+const contactOptions = {
+  threshold: 0,
 };
 
-const sectionTwoObserver = new IntersectionObserver(function (
+const contactObserver = new IntersectionObserver(function (
   entries,
-  sectionTwoObserver
+  contactObserver
 ) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      skills.classList.add("active");
-      main.classList.add("active-2");
+      footerMenu.classList.add("active");
+      footerMenu.classList.remove("active-menu");
     } else {
-      skills.classList.remove("active");
-      main.classList.remove("active-2");
+      footerMenu.classList.remove("active");
     }
   });
 },
-sectionTwoOptions);
-sectionTwoObserver.observe(sectionTwo);
+contactOptions);
+contactObserver.observe(contactSection);

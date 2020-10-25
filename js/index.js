@@ -1,7 +1,4 @@
-document.querySelector(".menu-button").addEventListener("click", () => {
-  // Block Scroll
-  document.querySelector(".body").classList.toggle("active");
-
+function menuActions() {
   document.querySelector(".menu").classList.toggle("active");
   document.querySelector(".menu-background").classList.toggle("active");
   document.querySelector(".menu-button").classList.toggle("active");
@@ -11,10 +8,27 @@ document.querySelector(".menu-button").addEventListener("click", () => {
   document.querySelector(".right").classList.toggle("active");
   document.querySelector(".left").classList.toggle("active");
   document.querySelector(".menu-container").classList.toggle("active");
+  document.querySelector(".menu-footer").classList.toggle("active-menu");
 
   // Responsive
   document.querySelector(".languages").classList.toggle("active");
   document.querySelector(".logo").classList.toggle("active");
   document.querySelector(".name-container").classList.toggle("active");
   document.querySelector(".portf-container").classList.toggle("active");
+
+  //document.querySelector(".body").classList.toggle("active");
+}
+
+document.querySelector(".menu-button").addEventListener("click", () => {
+  menuActions();
+});
+document.querySelector(".menu-portfolio").addEventListener("click", () => {
+  menuActions();
+});
+document.querySelector(".menu-contact").addEventListener("click", () => {
+  menuActions();
+});
+
+document.querySelector(".sect-1").addEventListener("click", () => {
+  document.documentElement.classList.toggle("color");
 });
