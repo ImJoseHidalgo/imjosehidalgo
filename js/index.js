@@ -8,26 +8,27 @@ function menuActions() {
   document.querySelector(".right").classList.toggle("active");
   document.querySelector(".left").classList.toggle("active");
   document.querySelector(".menu-container").classList.toggle("active");
-  document.querySelector(".menu-footer").classList.add("active-menu");
+  document.querySelector(".menu-footer").classList.toggle("active-menu");
 
   // Responsive
   document.querySelector(".languages").classList.toggle("active");
   document.querySelector(".logo").classList.toggle("active");
   document.querySelector(".name-container").classList.toggle("active");
   document.querySelector(".portf-container").classList.toggle("active");
+
+  //document.querySelector(".body").classList.toggle("active");
 }
 
 document.querySelector(".menu-button").addEventListener("click", () => {
   menuActions();
-  // Block Scroll
-  /*setTimeout(function () {
-    document.querySelector(".body").classList.toggle("active");
-  }, 500);*/
 });
-
 document.querySelector(".menu-portfolio").addEventListener("click", () => {
   menuActions();
 });
 document.querySelector(".menu-contact").addEventListener("click", () => {
   menuActions();
+});
+
+document.querySelector(".sect-1").addEventListener("click", () => {
+  document.documentElement.classList.toggle("color");
 });

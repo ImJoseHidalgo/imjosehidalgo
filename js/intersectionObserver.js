@@ -23,7 +23,8 @@ const sectionOneObserver = new IntersectionObserver(function (
 sectionOneOptions);
 sectionOneObserver.observe(sectionOne);
 
-//sdasdas
+/* FOOTER MENU
+      =============================== */
 
 const footerMenu = document.querySelector(".menu-footer");
 const contactSection = document.querySelector(".sect-4");
