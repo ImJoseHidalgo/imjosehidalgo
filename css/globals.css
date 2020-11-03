@@ -15,7 +15,7 @@
 .color {
   --lightBackground: #0e1319;
   --darkBackground: #f8f8f8;
-  --borders: #111;
+  --borders: #000;
   --textColorDark: #f8f8f8;
   --textColorLight: #0e1319;
   --textColorGray: #808080;
@@ -23,6 +23,7 @@
 }
 html {
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 h3 {
   font-size: 28px;
@@ -61,7 +62,7 @@ body#es .main-container .languages.active a:nth-child(2) {
 /* SCROLLBAR
       =============================== */
 body::-webkit-scrollbar {
-  width: 0.4em;
+  width: 0.6rem;
 }
 body::-webkit-scrollbar-track {
   background: var(--lightBackground);
