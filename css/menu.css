@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800;900&display=swap");
+
 body.active {
   overflow: hidden;
 }
@@ -28,7 +30,7 @@ body.active {
   transition: 0.2s 0s ease-in-out;
 }
 .menu-background.active {
-  opacity: 0.98;
+  opacity: 1;
   transition: 0.5s 0.1s cubic-bezier(1, 0, 0, 1);
 }
 .menu-container {
@@ -48,13 +50,16 @@ body.active {
 }
 
 .menu-container .menu-items li a {
-  font-size: 54px;
-  font-weight: 800;
+  font-size: 60px;
+  font-weight: 900;
   letter-spacing: 1px;
-  line-height: 55px;
+  line-height: 60px;
   color: transparent;
+  text-transform: uppercase;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--textColorDark);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .menu-container .menu-items li a:hover {
   color: var(--textColorDark);
@@ -85,51 +90,46 @@ body.active {
   transition-delay: 0.7s;
 }
 .menu-container .contact {
-  width: 20%;
+  width: 600px;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-left: -170px;
 }
 
 .menu-container .menu-items {
-  margin-top: 170px;
-}
-.menu-container .contact p {
-  font-size: 12px;
-  line-height: 18px;
-  margin: 6px 0;
-}
-.menu-container .contact a {
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--textColorDark);
-}
-.menu-container .contact p {
-  font-size: 12px;
-  line-height: 18px;
-  margin: 6px 0;
-}
-.menu-container .contact a {
-  font-size: 12px;
-  font-weight: 600;
-}
-
-.menu-container .contact .social-container {
-  display: none;
-}
-.menu-container .contact .social-container .icon {
-  width: 15px;
-  margin-right: 10px;
+  margin-top: 130px;
 }
 .menu-container .contact .contact-desc {
   opacity: 0;
   transition: 0.5s;
+  width: 300px;
 }
 .menu-container.active .contact .contact-desc {
   opacity: 1;
 }
+.menu-container .contact .contact-desc p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+.menu-container .contact .contact-desc a {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--textColorDark);
+  border-bottom: 1px solid var(--textColorGray);
+}
+.menu-container .contact .contact-desc a:hover {
+  border-bottom: 1px solid var(--textColorDark);
+}
+
+.menu-container .contact .contact-desc .social-container {
+  display: none;
+}
+.menu-container .contact .contact-desc .social-container .icon {
+  width: 15px;
+  margin-right: 10px;
+}
+
 .menu-container::after {
   content: "";
   position: fixed;
