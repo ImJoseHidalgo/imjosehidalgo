@@ -52,17 +52,10 @@ body.active {
 .menu-container .menu-items li a {
   font-size: 6rem;
   font-weight: 900;
-<<<<<<< HEAD
   letter-spacing: 1px;
   line-height: 6rem;
   color: transparent;
   -webkit-text-stroke-width: 0.7px;
-=======
-  line-height: 60px;
-  color: transparent;
-  letter-spacing: 1px;
-  -webkit-text-stroke-width: 0.6px;
->>>>>>> a282021e65e270fb8b350ddbf2a674c8c529ac91
   -webkit-text-stroke-color: var(--textColorDark);
 }
 .menu-container .menu-items li a:hover {
