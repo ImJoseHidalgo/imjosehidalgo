@@ -113,16 +113,32 @@
   font-weight: 600;
   font-size: 1.4rem;
 }
-.menu-footer a {
-  font-weight: 600;
-  font-size: 1.6rem;
-}
 .menu-footer ul {
   display: flex;
   list-style: none;
 }
 .menu-footer ul li {
   margin-left: 1rem;
+}
+.menu-footer a {
+  font-weight: 600;
+  font-size: 1.6rem;
+  position: relative;
+}
+.menu-footer a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  height: 0.6rem;
+  width: 100%;
+  background: #dddddd;
+  transition: 0.3s;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.menu-footer a:hover:before {
+  transform: scaleX(1);
 }
 
 /* RIGHT
