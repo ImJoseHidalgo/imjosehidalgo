@@ -18,11 +18,12 @@
 }
 .main::before {
   right: 0;
-  background-image: radial-gradient(
+  /*background-image: radial-gradient(
     circle at left,
     var(--line),
     var(--darkBackground)
-  );
+  );*/
+  background: #161619;
 }
 .main.active::after {
   width: 80%;
@@ -31,7 +32,7 @@
   width: 20%;
 }
 main .container {
-  max-width: 1150px;
+  max-width: 115rem;
   margin: auto;
 }
 /* LANDING
@@ -41,7 +42,7 @@ main .sect-1 {
   height: 100vh;
 }
 main .sect-2 {
-  height: 70vh;
+  height: 100vh;
 }
 main .sect-3 .sect-4 {
   position: relative;
@@ -64,7 +65,7 @@ main .sect-4 {
 main .sect-1 .picture {
   position: fixed;
   z-index: 0;
-  right: calc(50% - 300px);
+  right: calc(50% - 30rem);
   bottom: 0;
   top: 0;
   display: flex;
@@ -73,8 +74,8 @@ main .sect-1 .picture {
   transition: 1s;
 }
 main .sect-1 .picture img {
-  width: 600px;
-  filter: drop-shadow(0 0 50px rgba(0, 0, 0, 0.4));
+  width: 60rem;
+  filter: drop-shadow(0 0 5rem rgba(0, 0, 0, 0.4));
 }
 /*
 .picture img:last-child {
@@ -85,7 +86,7 @@ main .sect-1 .picture img {
   mix-blend-mode: multiply;
 }*/
 main.active .sect-1 .picture {
-  right: calc(20% - 300px);
+  right: calc(20% - 30rem);
 }
 /* Name Container */
 main .sect-1 .name-container {
@@ -96,10 +97,10 @@ main .sect-1 .name-container {
 }
 main .sect-1 .name-container .name {
   font-weight: 700;
-  font-size: 28px;
+  font-size: 2.8rem;
 }
 main .sect-1 .name-container .prof {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 main .sect-1 .name-container .name,
@@ -129,45 +130,55 @@ main .sect-1 .portf-container {
 }
 main .sect-1 .portf-container a {
   font-weight: 700;
-  font-size: 28px;
+  font-size: 2.8rem;
 }
 main .sect-1 .portf-container img {
-  width: 20px;
+  width: 2rem;
 }
 /* SOBRE MI
     =============================== */
 main .sect-2 .container {
   position: fixed;
   z-index: 1;
-  /*top: 34%;
-  left: 22%;
-  width: 50%;*/
   top: 50%;
   left: 50%;
-  width: 1150px;
+  width: 115rem;
   transform: translate(-50%, -50%);
 }
 main .sect-2 .container h2 {
   width: 50%;
-  margin-bottom: 30px;
-  font-size: 28px;
-  font-weight: 900;
+  margin-bottom: 4rem;
+  font-size: 2.8rem;
+  font-weight: 700;
   transition: 0.5s 0s;
   transform: scaleY(0);
 }
+main .sect-2 .container span {
+  position: relative;
+}
+main .sect-2 .container span:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 0.3rem;
+  height: 0.8rem;
+  width: 100%;
+  background: #dddddd;
+  transition: 0.3s;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+main .sect-2 .container span:hover:before {
+  transform: scaleX(1);
+}
 main .sect-2 .container a {
-  /*opacity: 0;
-  background: var(--line);
-  color: var(--lightBackground);
-  padding: 10px 20px;
-  border-radius: 50px;*/
   color: var(--textColorDark);
   background: var(--lightBackground);
   text-transform: uppercase;
-  font-weight: 700;
-  padding: 7px 12px;
-  border-radius: 20px;
-  border: 3px solid var(--darkBackground);
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border: 0.2rem solid var(--darkBackground);
   transition: 0.5s 0s;
 }
 main .sect-2 .container a:hover {
@@ -184,6 +195,32 @@ main.active .sect-2 .container .bt {
   transform: scaleY(1);
   transition: transform 0.3s 0.6s;
 }
+/* BLOG
+    =============================== */
+main .blog-section {
+  position: relative;
+  z-index: 2;
+  background: #161619;
+  /*background-image: radial-gradient(
+    circle at right,
+    var(--line),
+    var(--darkBackground),
+    var(--darkBackground)
+  );*/
+}
+main .blog-section .container {
+  padding: 10rem 0;
+}
+main .blog-section .container h2 {
+  color: var(--textColorLight);
+}
+main .blog-section .container h2:first-child {
+  font-size: 14rem;
+  margin-bottom: 2rem;
+}
+main .blog-section .container h2:last-child {
+  font-size: 6rem;
+}
 /* PORTFOLIO
     =============================== */
 main .sect-3 {
@@ -195,7 +232,7 @@ main .sect-3 .container {
   height: auto;
   position: relative;
   display: flex;
-  padding: 100px 0 50px;
+  padding: 10rem 0 5rem;
 }
 main .sect-3 .container .title {
   position: sticky;
@@ -204,30 +241,133 @@ main .sect-3 .container .title {
   width: 30%;
 }
 main .sect-3 .container .title h2 {
-  font-size: 36px;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 main .sect-3 .container .title .line {
   width: 20%;
-  height: 3px;
+  height: 0.3rem;
   background: var(--line);
-  margin: 8px 0 20px;
+  margin: 8px 0 2rem;
 }
 main .sect-3 .container .title h3 {
-  font-size: 1.2em;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 main .sect-3 .container .previews {
   width: 70%;
-  margin-left: 50px;
+  margin-left: 5rem;
 }
 main .sect-3 .container .previews .card {
+  position: relative;
   padding: 14px;
-  border-radius: 30px;
-  margin-bottom: 20px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 3rem;
+  margin-bottom: 2rem;
+  box-shadow: 2px 2px 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: 0.5s;
+}
+main .sect-3 .container .previews .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--lightBackground);
+  z-index: 1;
+  opacity: 0.5;
+  border-radius: 3rem;
+  transform-origin: bottom;
+  transform: scaleY(0);
+  transition: 0.3s;
+}
+main .sect-3 .container .previews .card:hover::before {
+  transform: scaleY(1);
+  opacity: 1;
 }
 main .sect-3 .container .previews .card img {
   width: 100%;
+  position: relative;
   border-radius: 18px;
+}
+main .sect-3 .container .previews .card .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding: 5rem 10rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+main .sect-3 .container .previews .card .content h2 {
+  color: var(--textColorDark);
+  transition: 0.3s;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  transform: translateY(30rem);
+  opacity: 0;
+}
+main .sect-3 .container .previews .card .content p {
+  color: var(--textColorDark);
+  transition: 0.3s;
+  font-size: 1.6rem;
+  font-weight: 500;
+  transform: translateY(30rem);
+  opacity: 0;
+}
+main .sect-3 .container .previews .card .content .links a {
+  color: var(--textColorDark);
+  background: var(--lightBackground);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  opacity: 0;
+  transition: 0s;
+  margin: 0 0.5rem;
+  padding: 1rem 2rem;
+  border: 0.2rem solid var(--darkBackground);
+}
+main .sect-3 .container .previews .card .content .links a:hover {
+  color: var(--textColorLight);
+  background: var(--darkBackground);
+}
+main .sect-3 .container .previews .card:hover .content .links a {
+  transition: opacity 0.3s 0.6s;
+  opacity: 1;
+}
+main .sect-3 .container .previews .card .content .technologies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0 4rem;
+  transform: translateY(30rem);
+  transition: 0.3s;
+  opacity: 0;
+}
+main .sect-3 .container .previews .card:hover h2,
+main .sect-3 .container .previews .card:hover p,
+main .sect-3 .container .previews .card:hover .content .technologies {
+  transform: translateY(0rem);
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+main .sect-3 .container .previews .card .content .technologies p {
+  color: var(--textColorDark);
+  font-size: 1.6rem;
+  margin: 0 1rem 0 0;
+  padding: 0;
+}
+main .sect-3 .container .previews .card .content .technologies img {
+  width: 2rem;
+  border-radius: 0;
+  margin: 0 0.5rem;
 }
 /* CONTACT
     =============================== */
@@ -236,7 +376,7 @@ main .sect-4 {
   z-index: 2;
 }
 main .sect-4 .container {
-  margin: -50px auto 0;
+  margin: -5rem auto 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -247,10 +387,10 @@ main .sect-4 .contact-left h3 {
 }
 main .sect-4 .contact-right p {
   color: var(--lightBackground);
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 main .sect-4 .contact-right .x {
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 main .sect-4 .contact-right a {
   color: var(--textColorGray);
@@ -262,9 +402,9 @@ main .sect-4 .contact-footer-social {
   display: flex;
 }
 main .sect-4 .icon-footer {
-  width: 28px;
-  height: 28px;
-  margin-right: 10px;
+  width: 2.8rem;
+  height: 2.8rem;
+  margin-right: 1rem;
   background: var(--lightBackground);
   border-radius: 50%;
   display: flex;
@@ -274,7 +414,7 @@ main .sect-4 .icon-footer {
 main .sect-4 .icon-footer img {
   margin-top: 2px;
   width: 14px;
-  padding: 10px;
+  padding: 1rem;
 }
 
 /* RESPONSIVE
@@ -291,13 +431,13 @@ main .sect-4 .icon-footer img {
     width: 0%;
   }
   main .sect-1 .picture {
-    left: calc(80% - 230px);
+    left: calc(80% - 23rem);
   }
   main .sect-1 .picture img {
     width: 500px;
   }
   main.active .sect-1 .picture {
-    left: calc(100% - 220px);
+    left: calc(100% - 22rem);
   }
   /* Name Container */
   main .sect-1 .name-container {
@@ -336,7 +476,7 @@ main .sect-4 .icon-footer img {
     background: var(--textColorDark);
     border-radius: 50%;
     padding: 5px;
-    width: 12px;
+    width: 1.2rem;
     margin: 0 0 -3px 0;
     transform: rotate(180deg);
   }
@@ -348,8 +488,8 @@ main .sect-4 .icon-footer img {
   }
   main .sect-2 .container h2 {
     width: 100%;
-    margin: 30px 0;
-    font-size: 16px;
+    margin: 3rem 0;
+    font-size: 1.6rem;
     font-weight: 600;
   }
   main .sect-2 .container h2 strong {
@@ -362,7 +502,7 @@ main .sect-4 .icon-footer img {
   }
   main .sect-3 .container {
     width: 90%;
-    padding: 50px 0;
+    padding: 5rem 0;
   }
   main .sect-3 .container a {
     font-weight: 600;
@@ -379,14 +519,14 @@ main .sect-4 .icon-footer img {
     grid-template-columns: 1fr;
   }
   main .sect-4 .contact-left h3 {
-    font-size: 28px;
+    font-size: 2.8rem;
     width: 100%;
   }
   main .sect-4 .contact-left {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
   }
   main .sect-4 .contact-right p {
-    font-size: 12px;
+    font-size: 1.2rem;
   }
   main .sect-4 .contact-right a {
     font-size: 13px;
