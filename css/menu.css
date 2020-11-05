@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800;900&display=swap"); */
 
 body.active {
   overflow: hidden;
@@ -164,9 +164,10 @@ body.active {
 .main-container .menu-button p {
   position: absolute;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 600;
   left: 2.5rem;
   padding: 1.2rem 0;
+  margin-left: -0.7rem;
   transition: 0.2s all;
   transform: rotate(-90deg);
   letter-spacing: 3px;
@@ -188,7 +189,7 @@ body.active {
   height: 0.2rem;
   background: var(--textColorDark);
   position: absolute;
-  top: 1rem;
+  top: 1.4rem;
   left: 0;
   border-radius: 5rem;
   transition: 0.2s;
@@ -200,15 +201,14 @@ body.active {
   height: 0.2rem;
   background: var(--textColorDark);
   position: absolute;
-  top: -0.4rem;
+  top: -0.5rem;
   right: 0;
   transition: 0.2s;
   border-radius: 5rem;
 }
 .button::after {
   width: 40%;
-  top: 0.4rem;
-  height: 0.15rem;
+  top: 0.5rem;
 }
 
 .menu-button:hover .button:before,
