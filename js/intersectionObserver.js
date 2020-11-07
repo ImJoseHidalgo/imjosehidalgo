@@ -1,3 +1,5 @@
+/* LANDING FOCUS
+=============================== */
 const main = document.querySelector(".main");
 const mainContainer = document.querySelector(".main-container");
 const sectionOne = document.querySelector(".sect-1");
