@@ -27,8 +27,8 @@
   position: fixed;
   z-index: 10;
   left: 1rem;
-  width: 1rem;
-  height: 1rem;
+  width: 0.8rem;
+  height: 0.8rem;
   transform: translate(-50%, -50%);
   background: #fff;
   mix-blend-mode: difference;

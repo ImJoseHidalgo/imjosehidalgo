@@ -148,6 +148,9 @@ body.active {
 .menu-container .contact .contact-desc a:hover {
   border-bottom: 1px solid var(--textColorDark);
 }
+.menu-container .contact .contact-desc .mobile {
+  margin-top: 2rem;
+}
 
 .menu-container .contact .contact-desc .social-container {
   display: none;

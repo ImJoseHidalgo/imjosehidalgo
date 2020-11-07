@@ -24,12 +24,12 @@
     =============================== -->
       <div class="sect-1">
         <div class="picture">
-          <!--<img src="images/p3 copy.png" alt="profile" />-->
-          <!-- <img
+          <!-- <img src="images/p3 copy.png" alt="profile" /> -->
+          <img
             src="https://image.jimcdn.com/app/cms/image/transf/dimension=409x2048:format=png/path/s2327599727345734/image/i20244355d30a7038/version/1549961940/image.png"
             alt=""
-          /> -->
-          <!--<img src="images/text.jpg" alt="text" />-->
+          />
+          <!-- <img src="images/text.jpg" alt="text" /> -->
         </div>
         <div class="name-container">
           <h1 class="name">José Hidalgo</h1>
@@ -380,8 +380,29 @@
     <div class="inner-cursor"></div>
     <div class="outer-cursor"></div>
 
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
     <script src="./js/actions.js"></script>
     <script src="./js/intersectionObserver.js"></script>
     <script src="./js/scroll.js"></script>
+    <script>
+      gsap.from(".name-container", {
+        opacity: 0,
+        duration: 1,
+        y: -50,
+        ease: "Power2.easeInOut",
+      });
+      gsap.from(".portf-container", {
+        opacity: 0,
+        duration: 1,
+        y: -50,
+        ease: "Power2.easeInOut",
+      });
+      gsap.from(".picture", {
+        opacity: 1,
+        duration: 0.5,
+        y: 50,
+        ease: "Power2.easeInOut",
+      });
+    </script>
   </body>
 </html>
