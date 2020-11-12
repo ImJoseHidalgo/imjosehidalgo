@@ -4,7 +4,7 @@
 
 - 💻 I’m a developer from Bolivia who is mainly interested in web technologies, specially in **frontend development**.
 - 🔧 I develop my projects using **HTML**, **CSS** and, **JavaScript**.
-- I'm currently studying at 💚 **[Platzi](https://platzi.com)**.
+- I'm currently studying at 💚 **[Henry](https://soyhenry.com)**.
 
 ## Contact
 
@@ -12,4 +12,4 @@
 - 🐦 **[Twitter](https://twitter.com/imjosehidalgo)**
 - 💼 **[LinkedIn](https://linkedin.com/in/imjosehidalgo)**
 - 📸 **[Instagram](https://instagram.com/imjosehidalgo)**
-- 🌐 **[Website](https://josehidalgo.dev)**
+- 🌐 **[Website (In construction)](https://josehidalgo.dev)**
