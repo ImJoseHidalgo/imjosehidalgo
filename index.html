@@ -24,12 +24,12 @@
     =============================== -->
       <div class="sect-1">
         <div class="picture">
-          <!--<img src="images/p3 copy.png" alt="profile" />-->
-          <!-- <img
+          <!-- <img src="images/p3 copy.png" alt="profile" /> -->
+          <img
             src="https://image.jimcdn.com/app/cms/image/transf/dimension=409x2048:format=png/path/s2327599727345734/image/i20244355d30a7038/version/1549961940/image.png"
             alt=""
-          /> -->
-          <!--<img src="images/text.jpg" alt="text" />-->
+          />
+          <!-- <img src="images/text.jpg" alt="text" /> -->
         </div>
         <div class="name-container">
           <h1 class="name">José Hidalgo</h1>
@@ -191,8 +191,12 @@
                     <img src="images/icons/css.svg" alt="Javascript" />
                   </div>
                   <div class="links">
-                    <a href="#">Repo</a>
-                    <a href="#">Live</a>
+                    <a
+                      target="_blank"
+                      href="https://github.com/imjosehidalgo/des1"
+                      >Repo</a
+                    >
+                    <a target="_blank" href="https://des1.vercel.app/">Live</a>
                   </div>
                 </div>
               </div>
@@ -236,7 +240,9 @@
               Si deseas comunicarte conmigo o te interesa comenzar un proyecto
               juntos, pónte en contacto.
             </p>
-            <a href="mailto:josehidalgo990@gmail.com">Envíame un Email</a>
+            <a class="email" href="mailto:josehidalgo990@gmail.com"
+              >Envíame un Email</a
+            >
             <p class="x">O envíame un mensaje directo en mis redes sociales.</p>
             <div class="contact-footer-social">
               <div class="icon-footer">
@@ -274,8 +280,8 @@
               <!-- <a href="./"><img src="images/icons/jhB.png" alt="Logo" /></a> -->
             </div>
             <div class="languages">
-              <a href="#">EN</a>
-              <a href="./es/index.html">ES</a>
+              <a class="lang-icon" href="#">EN</a>
+              <a class="lang-icon" href="./es/index.html">ES</a>
             </div>
           </div>
         </header>
@@ -335,7 +341,9 @@
                 Si deseas comunicarte conmigo o te interesa comenzar un proyecto
                 juntos, pónte en contacto.
               </p>
-              <a href="mailto:josehidalgo990@gmail.com">Envíame un correo</a>
+              <a class="menu-email" href="mailto:josehidalgo990@gmail.com"
+                >Envíame un correo</a
+              >
               <p class="mobile">
                 O envíame un mensaje directo en mis redes sociales.
               </p>
@@ -367,8 +375,13 @@
     =============================== -->
       <div class="scrollTop" onclick="scrollToTop();"></div>
     </main>
+    <!-- POINTER
+  =============================== -->
+    <div class="inner-cursor"></div>
+    <div class="outer-cursor"></div>
 
-    <script src="./js/index.js"></script>
+    <script src="./js/tilt.js"></script>
+    <script src="./js/actions.js"></script>
     <script src="./js/intersectionObserver.js"></script>
     <script src="./js/scroll.js"></script>
   </body>

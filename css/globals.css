@@ -5,9 +5,11 @@
 }
 :root {
   --lightBackground: #f8f8f8;
-  --darkBackground: #0e1319;
+  /*--darkBackground: #0e1319;*/
+  --darkBackground: #161619;
   --borders: #fff;
-  --textColorDark: #0e1319;
+  /*--textColorDark: #0e1319;*/
+  --textColorDark: #161619;
   --textColorLight: #f8f8f8;
   --textColorGray: #808080;
   --line: #2c3541;
@@ -53,7 +55,6 @@ body#es .main-container.active .languages a:nth-child(2) {
 body#en .main-container .languages a:nth-child(1),
 body#es .main-container .languages a:nth-child(2) {
   color: var(--lightBackground);
-  font-weight: 700;
 }
 body#en .main-container .languages.active a:nth-child(1),
 body#es .main-container .languages.active a:nth-child(2) {
