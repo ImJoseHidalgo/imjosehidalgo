@@ -2,9 +2,9 @@
 
 ### Hi there 👋
 
-- 💻 I’m a developer from Bolivia who is mainly interested in web technologies, specially in **frontend development**.
-- 🔧 I develop my projects using **HTML**, **CSS** and, **JavaScript**.
-- I'm currently studying at 💚 **[Henry](https://soyhenry.com)**.
+- 💻 I’m a developer who is mainly interested in web technologies, specially in **frontend development**.
+- 🔧 I develop my projects using **HTML**, **CSS** , **JavaScript**, and, **React**.
+<!-- - I'm currently studying at 💚 **[Henry](https://soyhenry.com)**. -->
 
 ## Contact
 
