@@ -75,7 +75,8 @@ mouseHover(lang7);
 mouseHover(lang8);
 mouseHover(lang9);
 
-VanillaTilt.init(document.querySelectorAll(".card"), {
-  max: 15,
-  speed: 700,
-});
+// CARDS HOVER ROTATE EFFECT
+// VanillaTilt.init(document.querySelectorAll(".card"), {
+//   max: 15,
+//   speed: 700,
+// });
