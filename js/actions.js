@@ -49,7 +49,7 @@ const lang2 = document.querySelectorAll(".icon");
 const lang3 = document.querySelectorAll(".lang-icon");
 const lang4 = document.querySelectorAll(".logo");
 const lang5 = document.querySelectorAll(".portf-container");
-const lang6 = document.querySelectorAll("span");
+const lang6 = document.querySelectorAll(".nameSpan");
 const lang7 = document.querySelectorAll(".icon-footer");
 const lang8 = document.querySelectorAll(".email");
 const lang9 = document.querySelectorAll(".menu-email");
@@ -75,7 +75,8 @@ mouseHover(lang7);
 mouseHover(lang8);
 mouseHover(lang9);
 
-VanillaTilt.init(document.querySelectorAll(".card"), {
-  max: 15,
-  speed: 700,
-});
+// CARDS HOVER ROTATE EFFECT
+// VanillaTilt.init(document.querySelectorAll(".card"), {
+//   max: 15,
+//   speed: 700,
+// });

@@ -18,11 +18,6 @@
 }
 .main::before {
   right: 0;
-  /*background-image: radial-gradient(
-    circle at left,
-    var(--line),
-    var(--darkBackground)
-  );*/
   background: var(--darkBackground);
 }
 .main.active::after {
@@ -35,6 +30,7 @@ main .container {
   max-width: 105rem;
   margin: auto;
 }
+
 /* LANDING
     =============================== */
 main .sect-1 {
@@ -140,20 +136,6 @@ main .sect-2 .container h2:nth-child(2) {
 main .sect-2 .container span {
   position: relative;
 }
-main .sect-2 .container a {
-  color: var(--textColorDark);
-  background: var(--lightBackground);
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 1.2rem;
-  padding: 1rem 2rem;
-  border: 0.2rem solid var(--darkBackground);
-  transition: 0.5s 0s;
-}
-main .sect-2 .container a:hover {
-  color: var(--textColorLight);
-  background: var(--darkBackground);
-}
 main .sect-2 .container .bt {
   transform: scaleY(0);
   transition: 0.3s;
@@ -163,6 +145,39 @@ main.active .sect-2 .container a,
 main.active .sect-2 .container .bt {
   transform: scaleY(1);
   transition: transform 0.3s 0.6s;
+}
+main .sect-2 .container .btn {
+  position: relative;
+  padding: 1rem 2rem;
+  border: .2rem solid var(--darkBackground);
+  margin: 0 0.5rem;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--darkBackground);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  overflow: hidden;
+  opacity: 1;
+  transition: .5s;
+}
+main .sect-2 .container .btn:hover {
+  color: var(--lightBackground);
+}
+main .sect-2 .container .btn span {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: var(--darkBackground);
+  z-index: -1;
+  transition: width .5s, height .5s;
+}
+main .sect-2 .container .btn:hover span {
+  width: 30rem;
+  height: 30rem;
 }
 /* BLOG
     =============================== */
@@ -228,14 +243,14 @@ main .sect-3 .container .previews {
   position: relative;
   width: 70%;
   margin-left: 5rem;
-  transform-style: preserve-3d;
 }
 main .sect-3 .container .previews .card {
   position: relative;
   margin-bottom: 2rem;
-  /* overflow: hidden; */
+  overflow: hidden;
   box-shadow: 2px 2px 1rem rgba(0, 0, 0, 0.1);
   transform-style: preserve-3d;
+  perspective: 150rem;
   transition: 0.5s;
 }
 main .sect-3 .container .previews .card:hover {
@@ -247,10 +262,10 @@ main .sect-3 .container .previews .card img {
 }
 main .sect-3 .container .previews .card .content {
   position: absolute;
-  top: 3rem;
-  left: 3rem;
-  right: 3rem;
-  bottom: 3rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 1;
   padding: 5rem 2rem;
   display: flex;
@@ -258,14 +273,13 @@ main .sect-3 .container .previews .card .content {
   text-align: center;
   box-sizing: border-box;
   background: var(--lightBackground);
-  transform: translateZ(2rem) scaleY(0);
+  transform: scaleY(0);
   transform-origin: top;
   transition: 0.4s;
-  transform-style: preserve-3d;
   overflow: hidden;
 }
 main .sect-3 .container .previews .card:hover .content {
-  transform: translateZ(5rem) scaleY(1);
+  transform: scaleY(1);
 }
 main .sect-3 .container .previews .card .content h2 {
   color: var(--textColorDark);
@@ -284,23 +298,40 @@ main .sect-3 .container .previews .card .content p {
   transform: translateY(-30rem);
   opacity: 0;
 }
-main .sect-3 .container .previews .card .content .links a {
-  color: var(--textColorDark);
-  background: var(--lightBackground);
+main .sect-3 .container .previews .card .content .links .btn {
+  position: relative;
+  padding: 1rem 2rem;
+  border: .2rem solid var(--darkBackground);
+  margin: 0 0.5rem;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--darkBackground);
   text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: 600;
+  overflow: hidden;
   opacity: 0;
-  transition: 0s;
-  margin: 0 0.5rem;
-  padding: 1rem 2rem;
-  border: 0.2rem solid var(--darkBackground);
+  transition: .5s;
 }
-main .sect-3 .container .previews .card .content .links a:hover {
-  color: var(--textColorLight);
+main .sect-3 .container .previews .card .content .links .btn:hover {
+  color: var(--lightBackground);
+}
+main .sect-3 .container .previews .card .content .links .btn span {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
   background: var(--darkBackground);
+  z-index: -1;
+  transition: width .5s, height .5s;
 }
-main .sect-3 .container .previews .card:hover .content .links a {
+main .sect-3 .container .previews .card .content .links .btn:hover span {
+  width: 30rem;
+  height: 30rem;
+}
+main .sect-3 .container .previews .card:hover .content .links .btn {
   transition: opacity 0.3s 0.6s;
   opacity: 1;
 }
