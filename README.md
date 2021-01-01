@@ -1,34 +1,19 @@
 ![header](./images/readme-header.png)
 <!-- ![header](https://raw.githubusercontent.com/ImJoseHidalgo/imjosehidalgo/master/images/readme-header.png) -->
 
-### Hi there 👋
+### Hi There 👋
 
 - 💻 I’m a developer who is mainly interested in web technologies, specially in **frontend development**.
 - 🔧 I develop my projects using **HTML**, **CSS** , **JavaScript**, and, **React**.
 <!-- - I'm currently studying at 💚 **[Henry](https://soyhenry.com)**. -->
 ## Contact
 
-<style>
-  .ul {
-    display: flex;
-    justify-content: center;
-  }
-  .li {
-    margin: 0 20px;
-  }
-</style>
-<ul class="ul">
-  <li class="li">📩<a href=""> Email</a></li>
-  <li class="li">🐦<a href=""> LinkedIn</a></li>
-  <li class="li">💼<a href=""> Twitter</a></li>
-  <li class="li">📸<a href=""> Instagram</a></li>
-</ul>
+- 📩 **[Email](mailto:josehidalgo990@gmail.com)**
+- 🐦 **[LinkedIn](mailto:josehidalgo990@gmail.com)**
+- 💼 **[Twitter](mailto:josehidalgo990@gmail.com)**
+- 📸 **[Instagram](mailto:josehidalgo990@gmail.com)**
 
----
-
-## These are some of my projects:
-
----
+## These Are Some Of My Projects:
 
 ## React Gift Mobile Web App
 A web app designed for mobile
@@ -37,8 +22,6 @@ A web app designed for mobile
 
 #### Live Demo [Click here](https://gif9.netlify.app)
 #### Repo [Click here](https://github.com/ImJoseHidalgo/giffApp)
-
----
 
 ## Dark Night Theme 
 A Custom Visual Studio Code Theme
