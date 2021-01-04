@@ -9,9 +9,9 @@
 ## Contact
 
 - 📩 **[Email](mailto:josehidalgo990@gmail.com)**
-- 🐦 **[LinkedIn](mailto:josehidalgo990@gmail.com)**
-- 💼 **[Twitter](mailto:josehidalgo990@gmail.com)**
-- 📸 **[Instagram](mailto:josehidalgo990@gmail.com)**
+- 🐦 **[LinkedIn](https://linkedin.com/in/imjosehidalgo)**
+- 💼 **[Twitter](https://twitter.com/imjosehidalgo)**
+- 📸 **[Instagram](https://instagram.com/imjosehidalgo)**
 
 ## These Are Some Of My Projects:
 
