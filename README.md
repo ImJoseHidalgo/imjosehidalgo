@@ -4,14 +4,14 @@
 ### Hi There 👋
 
 - 💻 I’m a developer who is mainly interested in web technologies, specially in **frontend development**.
-- 🔧 I develop my projects using **HTML**, **CSS** , **JavaScript**, and, **React**.
+- 🔧 I develop my projects using **HTML**, **CSS** , **JavaScript**, **React**, **Angular**, **Typescript**, **Node**, **Express**, **MongoDB**, **PostgreSQL**.
 <!-- - I'm currently studying at 💚 **[Henry](https://soyhenry.com)**. -->
 ## Contact
 
 - 📩 **[Email](mailto:josehidalgo990@gmail.com)**
 - 🐦 **[LinkedIn](https://linkedin.com/in/imjosehidalgo)**
 - 💼 **[Twitter](https://twitter.com/imjosehidalgo)**
-- 📸 **[Instagram](https://instagram.com/imjosehidalgo)**
+<!-- - 📸 **[Instagram](https://instagram.com/imjosehidalgo)** -->
 
 ## These Are Some Of My Projects:
 
