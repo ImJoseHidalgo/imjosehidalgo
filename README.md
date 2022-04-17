@@ -6,8 +6,9 @@
 <br><br></strong></p>
 
 <strong>
-<p>Visit my portfolio to know more about me :)</p>
-<a href="https://imjosehidalgo.com" target="_blank">PORTFOLIO</a>
+<p>Feel free to text me on LinkedIn.</p>
+<p>Will be a pleasure to answer you back 🙂</p>
+<a href="https://www.linkedin.com/in/imjosehidalgo/" target="_blank">LINKEDIN</a>
 </strong>
 
 <br>
